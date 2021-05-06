@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/contact-page.css" />
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <h4><a href="home.html" class="me">NATHAN MASTERS</a></h4>
+      </div>
+      <ul class="nav-links">
+        <li></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact-page.html">Contact</a></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <h1>CONTACT FORM</h1>
+    <h2>
+      Please fill in the details below and I will respond as soon as possible.
+    </h2>
+
+    <div class="outer">
+      <div class="container">
+        <form
+          action="https://formsubmit.co/nathanmasters.com@hotmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New Email!" />
+          <input
+            class="inp"
+            type="text"
+            name="firstName"
+            placeholder="Name"
+            required
+          />
+          <input
+            class="inp"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <input type="hidden" name="_next" value="thankyou.html" />
+          <label for="message">Message:</label>
+          <input
+            class="message"
+            type="text"
+            id="message"
+            name="message"
+            required
+          />
+          <div class="btn">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="../app.js"></script>
+  </body>
+</html>

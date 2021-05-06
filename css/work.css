@@ -1,0 +1,332 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(44, 44, 44);
+  height: 100vh;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgb(41, 41, 41);
+  border-bottom: solid 2px #649ac7;
+}
+
+.me {
+  color: #649ac7;
+  letter-spacing: 5px;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.me:hover {
+  color: rgb(224, 224, 224);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgb(224, 224, 224);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+.nav-links a:hover {
+  color: #649ac7;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #649ac7;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.titles {
+  margin-top: 60px;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 2.5vw;
+  font-weight: lighter;
+  color: #649ac7;
+  letter-spacing: 5px;
+}
+
+.flip-card {
+  width: 550px;
+  height: 800px;
+  border: 2px solid #649ac7;
+  margin-bottom: 30px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.flip-card-front {
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-front .pic {
+  border-bottom: solid 1px #649ac7;
+  width: 100%;
+  height: 50%;
+  top: 0%;
+}
+
+.information2 h1 {
+  font-size: 26px;
+  margin: 10px;
+  color: rgb(224, 224, 224);
+}
+
+.information {
+  background-color: rgb(36, 36, 36);
+  height: 100%;
+}
+
+.information2 {
+  height: 40%;
+  width: 100%;
+}
+
+.information2 p {
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: left;
+  font-size: 18px;
+  color: rgb(224, 224, 224);
+}
+
+.information2 ul p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: rgb(230, 171, 63);
+}
+
+.information2 li {
+  margin-left: 50px;
+  text-align: left;
+  list-style-type: circle;
+  color: rgb(230, 171, 63);
+}
+
+.allCards {
+  margin: 25px;
+  display: flex;
+  margin-right: 3%;
+  margin-left: 3%;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.btn-space {
+  height: 10%;
+}
+
+.btn {
+  margin-left: 12px;
+  margin-right: 12px;
+  background-color: rgb(34, 34, 34);
+  border: solid 1px rgb(230, 171, 63);
+  color: rgb(230, 171, 63);
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(230, 171, 63);
+  color: rgb(36, 36, 36);
+}
+
+.northcoders-all {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 7%;
+}
+
+audio {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1050px) {
+  .titles {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  audio {
+    width: 80%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    justify-content: none;
+    z-index: 10;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .nav-links a {
+    color: #649ac7;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 0px;
+  }
+
+  .nav-links a:hover {
+    color: rgb(224, 224, 224);
+  }
+
+  .burger {
+    display: block;
+  }
+  .information2 {
+    height: 38%;
+  }
+
+  .information2 h1 {
+    font-size: 4vw;
+    margin: 10px;
+    color: rgb(224, 224, 224);
+  }
+
+  .information2 p {
+    margin-left: 2%;
+    margin-right: 2%;
+    text-align: left;
+    font-size: 3.5vw;
+    color: rgb(224, 224, 224);
+  }
+
+  .flip-card-back ul p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(230, 171, 63);
+    font-size: 3.5vw;
+  }
+
+  .information2 li {
+    margin-left: 30px;
+    font-size: 3vw;
+    text-align: left;
+    list-style-type: circle;
+    color: rgb(230, 171, 63);
+  }
+
+  .north-list li {
+    margin-left: 30px;
+  }
+  .btn {
+    margin: 10px;
+    background-color: rgb(34, 34, 34);
+    border: solid 1px rgb(230, 171, 63);
+    color: rgb(230, 171, 63);
+    padding: 6px 8px;
+    font-size: 3.5vw;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 420px) {
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 580px;
+    border: 2px solid #649ac7;
+    margin-bottom: 30px;
+  }
+
+  .titles {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #649ac7;
+    letter-spacing: 7px;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-25px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
